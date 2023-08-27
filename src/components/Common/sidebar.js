@@ -15,8 +15,8 @@ const Sidebar = () => {
   };
 
   return (
-    <nav class="hidden xl:flex bg-black-800 flex-col items-center h-screen w-1/12">
-      <div class="fixed flex flex-col h-screen justify-evenly">
+    <nav className="hidden xl:flex bg-black-800 flex-col items-center h-screen w-1/12">
+      <div className="fixed flex flex-col h-screen justify-evenly">
         <a
           ref={linkRef}
           href="#movies"

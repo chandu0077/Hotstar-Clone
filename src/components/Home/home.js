@@ -13,6 +13,7 @@ import {
 import Navbar from "../Common/navbar";
 import Commonslider from "../Common/commonSlider";
 import Contactus from "../Common/contactUs";
+import { slideshowMovies } from "../Common/constants";
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
         <Navbar />
         <Contactus />
         {/* <RouterProvider router={router} /> */}
-        <Slideshow />
+        <Slideshow movies={slideshowMovies} />
 
         <Trending movies={trendingMovies} />
         <div id="popularMovies">

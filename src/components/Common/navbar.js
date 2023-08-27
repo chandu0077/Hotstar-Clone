@@ -88,15 +88,15 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <button
               type="button"
-              class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
-              <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">View notifications</span>
+              <span className="absolute -inset-1.5"></span>
+              <span className="sr-only">View notifications</span>
               <svg
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
@@ -111,23 +111,13 @@ const Navbar = () => {
               </svg>
             </button>
 
-            <div class="relative ml-3">
+            <div className="relative ml-3">
               <div>
-                {/* <button
-                  type="button"
-                  class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                  id="user-menu-button"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                > */}
-                {/* <span class="absolute -inset-1.5 hidden"></span> */}
-                {/* <span class="sr-only">Open user menu</span> */}
                 <img
-                  class="h-8 w-8 rounded-full"
-                  src="/img/Sai chandu passport photo.png"
-                  alt=""
+                  className="h-8 w-8 rounded-full"
+                  src="images/profile_pic.png"
+                  alt="profile pic"
                 />
-                {/* </button> */}
               </div>
             </div>
           </div>

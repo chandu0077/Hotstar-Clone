@@ -15,7 +15,7 @@ const Recommended = () => {
       <div
         className="w-full xl:w-11/12 xl:h-96 bg-no-repeat bg-cover rounded-lg"
         style={{
-          backgroundImage: `url(${"/img/recommend.jpg"})`,
+          backgroundImage: `url(${"images/recommend.jpg"})`,
           height: "422px",
         }}
       >
@@ -42,17 +42,17 @@ const Recommended = () => {
           </div>
           <div className="flex flex-col xl:flex-row space-x-55 p-3">
             <div className="p-2 mx-3">
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Watch Now
               </button>
             </div>
             <div className="p-2 mx-3">
-              <button class="bg-black-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button className="bg-black-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Trailer
               </button>
             </div>
             <div className="p-2 mx-3">
-              <button class="bg-dark-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button className="bg-dark-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Add to list
               </button>
             </div>
@@ -126,13 +126,13 @@ const Recommended = () => {
           href="https://www.linkedin.com/in/chandu-dsc-385086236/"
           target="__blank"
         >
-          <i class="fa fa-linkedin"></i>
+          <i className="fa fa-linkedin"></i>
         </a>
         <a href="mailto:chandu.dsc77@gmail.com">
-          <i class="fa fa-envelope"></i>
+          <i className="fa fa-envelope"></i>
         </a>
         <a href="https://www.facebook.com/chandu3456/" target="__blank">
-          <i class="fa fa-facebook-f"></i>
+          <i className="fa fa-facebook-f"></i>
         </a>
       </div>
     </div>

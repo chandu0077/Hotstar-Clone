@@ -1,55 +1,55 @@
 export const trendingMovies = [
   {
-    backgroundImg: "img/tr0.png",
+    backgroundImg: "images/tr0.png",
     title: "Hridayam",
     year: "2022",
     genre: "Movies",
     views: "3 203 184",
   },
   {
-    backgroundImg: "img/tr2.png",
+    backgroundImg: "images/tr2.png",
     title: "X",
     year: "2022",
     genre: "Movies",
     views: "167 405",
   },
   {
-    backgroundImg: "img/tr1.png",
+    backgroundImg: "images/tr1.png",
     title: "Sandakozhi 2",
     year: "2018",
     genre: "Movies",
     views: "49 598",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
     views: "27 757",
   },
   {
-    backgroundImg: "img/tr3.png",
+    backgroundImg: "images/tr3.png",
     title: "Bhajarangi 2",
     year: "2021",
     genre: "Movies",
     views: "212 976",
   },
   {
-    backgroundImg: "img/tr6.png",
+    backgroundImg: "images/tr6.png",
     title: "Jatt Brothers",
     year: "2022",
     genre: "Movies",
     views: "91 742",
   },
   {
-    backgroundImg: "img/tr8.png",
+    backgroundImg: "images/tr8.png",
     title: "Mufti",
     year: "2017",
     genre: "Movies",
     views: "16 500",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -58,7 +58,7 @@ export const trendingMovies = [
 ];
 export const popularMovies = [
   {
-    backgroundImg: "img/tr0.png",
+    backgroundImg: "images/tr0.png",
     title: "Hridayam",
     year: "2022",
     genre: "Movies",
@@ -66,7 +66,7 @@ export const popularMovies = [
     rating: "8.0",
   },
   {
-    backgroundImg: "img/tr2.png",
+    backgroundImg: "images/tr2.png",
     title: "X",
     year: "2022",
     genre: "Movies",
@@ -74,7 +74,7 @@ export const popularMovies = [
     rating: "8.5",
   },
   {
-    backgroundImg: "img/tr1.png",
+    backgroundImg: "images/tr1.png",
     title: "Sandakozhi 2",
     year: "2018",
     genre: "Movies",
@@ -82,7 +82,7 @@ export const popularMovies = [
     rating: "8.7",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -90,7 +90,7 @@ export const popularMovies = [
     rating: "9.3",
   },
   {
-    backgroundImg: "img/tr3.png",
+    backgroundImg: "images/tr3.png",
     title: "Bhajarangi 2",
     year: "2021",
     genre: "Movies",
@@ -98,7 +98,7 @@ export const popularMovies = [
     rating: "9.5",
   },
   {
-    backgroundImg: "img/tr6.png",
+    backgroundImg: "images/tr6.png",
     title: "Jatt Brothers",
     year: "2022",
     genre: "Movies",
@@ -106,7 +106,7 @@ export const popularMovies = [
     rating: "8.0",
   },
   {
-    backgroundImg: "img/tr8.png",
+    backgroundImg: "images/tr8.png",
     title: "Mufti",
     year: "2017",
     genre: "Movies",
@@ -114,7 +114,7 @@ export const popularMovies = [
     rating: "9.8",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -125,7 +125,7 @@ export const popularMovies = [
 
 export const moreMovies = [
   {
-    backgroundImg: "img/tr0.png",
+    backgroundImg: "images/tr0.png",
     title: "Hridayam",
     year: "2022",
     genre: "Movies",
@@ -133,7 +133,7 @@ export const moreMovies = [
     rating: "6.3",
   },
   {
-    backgroundImg: "img/tr2.png",
+    backgroundImg: "images/tr2.png",
     title: "X",
     year: "2022",
     genre: "Movies",
@@ -141,7 +141,7 @@ export const moreMovies = [
     rating: "7.3",
   },
   {
-    backgroundImg: "img/tr1.png",
+    backgroundImg: "images/tr1.png",
     title: "Sandakozhi 2",
     year: "2018",
     genre: "Movies",
@@ -149,7 +149,7 @@ export const moreMovies = [
     rating: "8.3",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -157,7 +157,7 @@ export const moreMovies = [
     rating: "9.0",
   },
   {
-    backgroundImg: "img/tr3.png",
+    backgroundImg: "images/tr3.png",
     title: "Bhajarangi 2",
     year: "2021",
     genre: "Movies",
@@ -165,7 +165,7 @@ export const moreMovies = [
     rating: "8.7",
   },
   {
-    backgroundImg: "img/tr6.png",
+    backgroundImg: "images/tr6.png",
     title: "Jatt Brothers",
     year: "2022",
     genre: "Movies",
@@ -173,7 +173,7 @@ export const moreMovies = [
     rating: "9.8",
   },
   {
-    backgroundImg: "img/tr8.png",
+    backgroundImg: "images/tr8.png",
     title: "Mufti",
     year: "2017",
     genre: "Movies",
@@ -181,7 +181,7 @@ export const moreMovies = [
     rating: "5.8",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -192,7 +192,7 @@ export const moreMovies = [
 
 export const series = [
   {
-    backgroundImg: "img/tr0.png",
+    backgroundImg: "images/tr0.png",
     title: "Hridayam",
     year: "2022",
     genre: "Movies",
@@ -200,7 +200,7 @@ export const series = [
     rating: "10",
   },
   {
-    backgroundImg: "img/tr2.png",
+    backgroundImg: "images/tr2.png",
     title: "X",
     year: "2022",
     genre: "Movies",
@@ -208,7 +208,7 @@ export const series = [
     rating: "4.5",
   },
   {
-    backgroundImg: "img/tr1.png",
+    backgroundImg: "images/tr1.png",
     title: "Sandakozhi 2",
     year: "2018",
     genre: "Movies",
@@ -216,7 +216,7 @@ export const series = [
     rating: "7.8",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -224,7 +224,7 @@ export const series = [
     rating: "9.8",
   },
   {
-    backgroundImg: "img/tr3.png",
+    backgroundImg: "images/tr3.png",
     title: "Bhajarangi 2",
     year: "2021",
     genre: "Movies",
@@ -232,7 +232,7 @@ export const series = [
     rating: "7.6",
   },
   {
-    backgroundImg: "img/tr6.png",
+    backgroundImg: "images/tr6.png",
     title: "Jatt Brothers",
     year: "2022",
     genre: "Movies",
@@ -240,7 +240,7 @@ export const series = [
     rating: "7.7",
   },
   {
-    backgroundImg: "img/tr8.png",
+    backgroundImg: "images/tr8.png",
     title: "Mufti",
     year: "2017",
     genre: "Movies",
@@ -248,7 +248,7 @@ export const series = [
     rating: "9.0",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -259,7 +259,7 @@ export const series = [
 
 export const cartoons = [
   {
-    backgroundImg: "img/tr0.png",
+    backgroundImg: "images/tr0.png",
     title: "Hridayam",
     year: "2022",
     genre: "Movies",
@@ -267,7 +267,7 @@ export const cartoons = [
     rating: "5.5",
   },
   {
-    backgroundImg: "img/tr2.png",
+    backgroundImg: "images/tr2.png",
     title: "X",
     year: "2022",
     genre: "Movies",
@@ -275,7 +275,7 @@ export const cartoons = [
     rating: "7.6",
   },
   {
-    backgroundImg: "img/tr1.png",
+    backgroundImg: "images/tr1.png",
     title: "Sandakozhi 2",
     year: "2018",
     genre: "Movies",
@@ -283,7 +283,7 @@ export const cartoons = [
     rating: "8.7",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -291,7 +291,7 @@ export const cartoons = [
     rating: "9.6",
   },
   {
-    backgroundImg: "img/tr3.png",
+    backgroundImg: "images/tr3.png",
     title: "Bhajarangi 2",
     year: "2021",
     genre: "Movies",
@@ -299,7 +299,7 @@ export const cartoons = [
     rating: "4.5",
   },
   {
-    backgroundImg: "img/tr6.png",
+    backgroundImg: "images/tr6.png",
     title: "Jatt Brothers",
     year: "2022",
     genre: "Movies",
@@ -307,7 +307,7 @@ export const cartoons = [
     rating: "6",
   },
   {
-    backgroundImg: "img/tr8.png",
+    backgroundImg: "images/tr8.png",
     title: "Mufti",
     year: "2017",
     genre: "Movies",
@@ -315,7 +315,7 @@ export const cartoons = [
     rating: "8.7",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -326,7 +326,7 @@ export const cartoons = [
 
 export const tv = [
   {
-    backgroundImg: "img/tr0.png",
+    backgroundImg: "images/tr0.png",
     title: "Hridayam",
     year: "2022",
     genre: "Movies",
@@ -334,7 +334,7 @@ export const tv = [
     rating: "5",
   },
   {
-    backgroundImg: "img/tr2.png",
+    backgroundImg: "images/tr2.png",
     title: "X",
     year: "2022",
     genre: "Movies",
@@ -342,7 +342,7 @@ export const tv = [
     rating: "6.7",
   },
   {
-    backgroundImg: "img/tr1.png",
+    backgroundImg: "images/tr1.png",
     title: "Sandakozhi 2",
     year: "2018",
     genre: "Movies",
@@ -350,7 +350,7 @@ export const tv = [
     rating: "8.5",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -358,7 +358,7 @@ export const tv = [
     rating: "3.4",
   },
   {
-    backgroundImg: "img/tr3.png",
+    backgroundImg: "images/tr3.png",
     title: "Bhajarangi 2",
     year: "2021",
     genre: "Movies",
@@ -366,7 +366,7 @@ export const tv = [
     rating: "10",
   },
   {
-    backgroundImg: "img/tr6.png",
+    backgroundImg: "images/tr6.png",
     title: "Jatt Brothers",
     year: "2022",
     genre: "Movies",
@@ -374,7 +374,7 @@ export const tv = [
     rating: "8.6",
   },
   {
-    backgroundImg: "img/tr8.png",
+    backgroundImg: "images/tr8.png",
     title: "Mufti",
     year: "2017",
     genre: "Movies",
@@ -382,7 +382,7 @@ export const tv = [
     rating: "6.7",
   },
   {
-    backgroundImg: "img/tr4.png",
+    backgroundImg: "images/tr4.png",
     title: "Njan Prakasan",
     year: "2018",
     genre: "Movies",
@@ -393,10 +393,10 @@ export const tv = [
 
 export const movieDetail = {
   movieTitle: "You are Not My Mother (2021)",
-  movieBanner: "/img/bgg.png",
+  movieBanner: "images/bgg.png",
   description:
     "In a North Dublin housing estate Char's mother goes missing. When she returns Char is determined to uncover the truth of her disappearance and unearth the dark secrets of her family.",
-  cardBanner: "/img/md1.jpg",
+  cardBanner: "images/md1.jpg",
   videoUrl: "https://www.w3schools.com/tags/movie.mp4",
   imdbRating: "5.8",
   metaScoreRating: "74",
@@ -420,3 +420,36 @@ export const movieDetail = {
   Year: "2021",
   Runtime: "93 min",
 };
+
+export const slideshowMovies = [
+  {
+    title: "You are not my mother",
+    description:
+      "n a North Dublin estate Char's mother goes missing. When she return Char is determined to uncover the truth of her disapperance and unearth the dark secrets of her family...",
+    year: "2021",
+    genre: "Horror",
+    rating: "9",
+    bgImg: "images/sg1.png",
+    img: "images/bgg.png",
+  },
+  {
+    title: "Attack on Finland",
+    description:
+      "Finland's Independence Day celebration on December 6 is crudely interrupted by an attack on the Presidential Palace. A set of distinguished guests are taken as hostages. Security service officer Max...",
+    year: "2021",
+    genre: "Action",
+    rating: "8",
+    bgImg: "images/sg2.png",
+    img: "images/bgg2.jpg",
+  },
+  {
+    title: "Chicken Hair and Tail",
+    description:
+      "Follows a young hero born half chicken and half hare. Eager to fit in and feel loved in spite of his differences, he is obsessed by adventuring in spite of his clumsiness....",
+    year: "2022",
+    genre: "cartoon",
+    rating: "10",
+    bgImg: "images/sg3.png",
+    img: "images/bgg3.jpg",
+  },
+];
