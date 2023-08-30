@@ -4,13 +4,16 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Moviedetail from "./components/MovieDetail/movieDetail";
 import { movieDetail } from "./components/Common/constants";
 
-const router = createBrowserRouter([
-  { path: "/Hotstar-Clone/", element: <Home /> },
-  {
-    path: "/movie-detail",
-    element: <Moviedetail movieDetail={movieDetail} />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    { path: "/", element: <Home /> },
+    {
+      path: "/movie-detail",
+      element: <Moviedetail movieDetail={movieDetail} />,
+    },
+  ],
+  { basename: "/Hotstar-Clone" },
+);
 function App() {
   return (
     <div>
