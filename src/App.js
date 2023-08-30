@@ -1,6 +1,3 @@
-// import NavDropdown from "react-bootstrap/NavDropdown";
-// import Navbar from "./components/navbar";
-// import Sidebar from "./components/sidebar";
 import Home from "./components/Home/home";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -10,7 +7,7 @@ import { movieDetail } from "./components/Common/constants";
 const router = createBrowserRouter([
   { path: "/Hotstar-Clone/", element: <Home /> },
   {
-    path: "/Hotstar-Clone/movie-detail",
+    path: "/movie-detail",
     element: <Moviedetail movieDetail={movieDetail} />,
   },
 ]);

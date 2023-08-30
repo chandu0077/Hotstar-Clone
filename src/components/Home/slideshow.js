@@ -3,8 +3,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import SlideShowThumb from "./slideshowThumb";
 // import { Button } from "@material-tailwind/react";
+import { useNavigate } from "react-router-dom";
 
 const Slideshow = ({ movies }) => {
+  const navigate = useNavigate();
+
   const [selectedMovie, setSelectedMovie] = useState(0);
   const changeMovieHandler = (idx) => {
     setSelectedMovie(idx);
@@ -58,28 +61,28 @@ const Slideshow = ({ movies }) => {
 
                   <div className="flex justify-between p-3">
                     <div>
-                      <a
-                        href="/Hotstar-Clone/movie-detail"
+                      <button
+                        onClick={() => navigate("/movie-detail")}
                         className="text-sm xl:text-xl p-1 xl:p-4 w-24 h-5 xl:w-36 xl:h-16 bg-blue-500 hover:bg-blue-700 text-white font-bold  rounded-full"
                       >
                         Watch now
-                      </a>
+                      </button>
                     </div>
                     <div>
-                      <a
+                      <button
                         href="#"
                         className="text-sm xl:text-xl p-1 xl:p-4 w-24 h-5 xl:w-36 xl:h-16 bg-slate-800 hover:bg-blue-700 text-white  rounded-full"
                       >
                         Trailer
-                      </a>
+                      </button>
                     </div>
                     <div>
-                      <a
+                      <button
                         href="#"
                         className="text-sm xl:text-xl p-1 xl:p-4 w-24 h-5 xl:w-36 xl:h-16 bg-slate-800 hover:bg-blue-700 text-white    rounded-full"
                       >
                         Add to list
-                      </a>
+                      </button>
                     </div>
 
                     <button></button>
