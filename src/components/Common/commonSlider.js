@@ -8,11 +8,14 @@ import { useRef } from "react";
 
 import Slider from "react-slick";
 // import { render } from "@testing-library/react";
-
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import MovieContext from "../../store/movie-context";
 const Commonslider = (props) => {
   const { movies, type } = props;
-
+  const commonCtx = useContext(MovieContext);
   const sliderRef = useRef();
+  const navigate = useNavigate();
 
   var settings = {
     dots: true,
@@ -46,14 +49,14 @@ const Commonslider = (props) => {
     ],
   };
 
-  const previousSlide = () => {
-    sliderRef.current.slickPrev();
-  };
+  // const previousSlide = () => {
+  //   sliderRef.current.slickPrev();
+  // };
 
-  const nextSlide = () => {
-    console.log(sliderRef);
-    sliderRef.current.slickNext();
-  };
+  // const nextSlide = () => {
+  //   console.log(sliderRef);
+  //   sliderRef.current.slickNext();
+  // };
 
   return (
     <div className="py-5">
@@ -66,13 +69,13 @@ const Commonslider = (props) => {
           <div className="hidden xl:block">
             <div className="" style={{ textAlign: "center" }}>
               <button
-                onClick={previousSlide}
+                onClick={commonCtx.previousSlide}
                 className="text-xl text-gray-400 p-5 hover:text-sky-700"
               >
                 <i className="fa fa-angle-left fa-lg"></i>
               </button>
               <button
-                onClick={nextSlide}
+                onClick={commonCtx.nextSlide}
                 className="text-xl text-gray-400 hover:text-sky-700 p-5"
               >
                 <i className="fa fa-angle-right fa-lg "></i>
@@ -91,7 +94,8 @@ const Commonslider = (props) => {
                 className="relative p-2 h-32 xl:h-auto bg-no-repeat bg-cover bg-top rounded-lg"
               >
                 <div
-                  className="relative h-32 xl:h-60"
+                  className="relative h-32 xl:h-60 cursor-pointer"
+                  onClick={() => navigate("/movie-detail")}
                   style={{
                     width: "auto",
                     // height: "150px",

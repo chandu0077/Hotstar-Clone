@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Recommended = () => {
   const [showMoreRecommended, setShowMoreRecommended] = useState(false);
+
+  const navigate = useNavigate();
 
   const toggleMoreDetails = () => {
     setShowMoreRecommended((prevState) => !prevState);
@@ -15,7 +18,7 @@ const Recommended = () => {
       <div
         className="w-full xl:w-11/12 xl:h-96 bg-no-repeat bg-cover rounded-lg"
         style={{
-          backgroundImage: `url(${"images/recommend.jpg"})`,
+          backgroundImage: `url(${"/Hotstar-Clone/images/recommend.jpg"})`,
           height: "422px",
         }}
       >
@@ -42,7 +45,10 @@ const Recommended = () => {
           </div>
           <div className="flex flex-col xl:flex-row space-x-55 p-3">
             <div className="p-2 mx-3">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button
+                onClick={() => navigate("/movie-detail")}
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              >
                 Watch Now
               </button>
             </div>

@@ -19,7 +19,7 @@ const Sidebar = () => {
       <div className="fixed flex flex-col h-screen justify-evenly">
         <a
           ref={linkRef}
-          href="#movies"
+          href="#Home"
           className="active:bg-violet-700 text-gray-300  hover:text-white rounded-md p-0 text-xl font-medium m-0 text-center"
           aria-current="page"
         >
@@ -29,7 +29,7 @@ const Sidebar = () => {
         <a
           ref={linkRef}
           onClick={(e) => handleNavclick(e)}
-          href="#series"
+          href="#movies"
           className=" active:bg-violet-700 text-gray-300  hover:text-white rounded-md p-0 text-xl font-medium m-0 text-center"
         >
           <i className="fa fa-film"></i>
@@ -37,7 +37,7 @@ const Sidebar = () => {
         </a>
         <a
           ref={linkRef}
-          href="#cartoons"
+          href="#tv"
           className=" active:bg-violet-700 text-gray-300  hover:text-white rounded-md p-0 text-xl font-medium m-0 text-center"
         >
           <i className="fa fa-television"></i>
@@ -45,7 +45,7 @@ const Sidebar = () => {
         </a>
         <a
           ref={linkRef}
-          href="#tv"
+          href="#recommended"
           className=" active:bg-violet-700 text-gray-300  hover:text-white rounded-md p-0 text-xl font-medium m-0 text-center"
         >
           <i className="fa fa-file-o"></i>
@@ -53,7 +53,7 @@ const Sidebar = () => {
         </a>
         <a
           ref={linkRef}
-          href="#recommended"
+          href="#popularMovies"
           className=" active:bg-violet-700 text-gray-300  hover:text-white rounded-md p-0 text-xl font-medium m-0 text-center"
         >
           <i className="fa fa-star-o"></i>

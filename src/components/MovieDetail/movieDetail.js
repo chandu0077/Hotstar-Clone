@@ -5,9 +5,12 @@ import MovieStills from "./movieStills";
 import MovieAbout from "./MovieAbout";
 import Herosection from "./heroSection";
 import Movietitle from "./movieTitle";
+import { useContext } from "react";
+import MovieContext from "../../store/movie-context";
+const Moviedetail = () => {
+  // const { movieDetail } = props;
 
-const Moviedetail = (props) => {
-  const { movieDetail } = props;
+  const movieCtx = useContext(MovieContext);
 
   return (
     <div className="flex">
@@ -18,7 +21,7 @@ const Moviedetail = (props) => {
         <div
           className="w-full h-full p-[12px] xl:p-[35px] bg-no-repeat bg-right xl:bg-right-top"
           style={{
-            backgroundImage: `linear-gradient(to bottom,rgba(0,0,0,0),#101010),url(${movieDetail.movieBanner})`,
+            backgroundImage: `linear-gradient(to bottom,rgba(0,0,0,0),#101010),url(${movieCtx.movieDetail.movieBanner})`,
           }}
         >
           <div
@@ -27,10 +30,10 @@ const Moviedetail = (props) => {
               background: "linear-gradient(to bottom,rgba(0,0,0,0),#101010)",
             }}
           >
-            <Movietitle movieDetail={movieDetail} />
-            <Herosection movieDetail={movieDetail} />
-            <MovieAbout movieDetail={movieDetail} />
-            <MovieStills stills={movieDetail.stills} />
+            <Movietitle />
+            <Herosection />
+            <MovieAbout />
+            <MovieStills />
           </div>
         </div>
       </div>

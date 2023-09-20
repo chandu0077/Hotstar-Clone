@@ -1,6 +1,9 @@
 import { CircularProgressbar } from "react-circular-progressbar";
-const Herosection = (props) => {
-  const { movieDetail } = props;
+import { useContext } from "react";
+import MovieContext from "../../store/movie-context";
+const Herosection = () => {
+  // const { movieDetail } = props;
+  const heroCtx = useContext(MovieContext);
   return (
     <div className="w-full h-auto xl:h-[600px]">
       <div className="flex justify-center xl:justify-start xl:gap-x-10">
@@ -9,14 +12,14 @@ const Herosection = (props) => {
           <div
             className="hidden xl:block relative w-full  bg-no-repeat bg-cover rounded-lg h-96"
             style={{
-              backgroundImage: `url(${movieDetail.cardBanner})`,
+              backgroundImage: `url(${heroCtx.movieDetail.cardBanner})`,
             }}
           >
             <div className="absolute bottom-3 right-2 w-7 h-8 xl:w-10 xl:h-10">
               <CircularProgressbar
-                value={movieDetail.saiScoreRating}
+                value={heroCtx.movieDetail.saiScoreRating}
                 maxValue={10}
-                text={`${movieDetail.saiScoreRating * 1}`}
+                text={`${heroCtx.movieDetail.saiScoreRating * 1}`}
                 strokeWidth={10}
                 // styles={buildStyles({
                 //   pathColor: "#5865f2",
@@ -55,7 +58,10 @@ const Herosection = (props) => {
               className="w-full xl:w-full h-full xl:h-[450px] py-1 xl:py-4"
               controls
             >
-              <source src={movieDetail.videoUrl} type="video/mp4"></source>
+              <source
+                src={heroCtx.movieDetail.videoUrl}
+                type="video/mp4"
+              ></source>
             </video>
           </div>
           <div className="w-5/5 h-fit">

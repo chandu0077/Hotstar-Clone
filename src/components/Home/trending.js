@@ -1,12 +1,15 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useRef } from "react";
-
+import { useRef, useContext } from "react";
+import MovieContext from "../../store/movie-context";
 import Slider from "react-slick";
-const Trending = (props) => {
-  const { movies } = props;
+import { useNavigate } from "react-router-dom";
+
+const Trending = () => {
+  const trendingCtx = useContext(MovieContext);
 
   const sliderRef = useRef();
+  const navigate = useNavigate();
 
   var settings = {
     dots: true,
@@ -40,14 +43,14 @@ const Trending = (props) => {
     ],
   };
 
-  const previousSlide = () => {
-    sliderRef.current.slickPrev();
-  };
+  // const previousSlide = () => {
+  //   sliderRef.current.slickPrev();
+  // };
 
-  const nextSlide = () => {
-    console.log(sliderRef);
-    sliderRef.current.slickNext();
-  };
+  // const nextSlide = () => {
+  //   console.log(sliderRef);
+  //   sliderRef.current.slickNext();
+  // };
 
   return (
     <div className="py-3">
@@ -59,13 +62,13 @@ const Trending = (props) => {
         <div className="hidden xl:flex none ">
           <div className="" style={{ textAlign: "center" }}>
             <button
-              onClick={previousSlide}
+              onClick={trendingCtx.previousSlide}
               className="text-xl text-gray-400 p-5 hover:text-sky-700"
             >
               <i className="fa fa-angle-left fa-lg"></i>
             </button>
             <button
-              onClick={nextSlide}
+              onClick={trendingCtx.nextSlide}
               className=" text-xl text-gray-400 hover:text-sky-700 p-5"
             >
               <i className="fa fa-angle-right fa-lg "></i>
@@ -77,14 +80,15 @@ const Trending = (props) => {
       <div className="w-full xl:h-72" id="trendingMovies">
         <div className="h-40 xl:h-auto">
           <Slider {...settings} ref={sliderRef}>
-            {movies.map((trendingMovie, id) => (
+            {trendingCtx.trendingMovies.map((trendingMovie, id) => (
               // <div className="p-2">
               <div
                 key={id}
                 className="relative p-2 h-32 xl:h-auto bg-no-repeat bg-cover bg-top rounded-lg"
               >
                 <div
-                  className="relative h-32 xl:h-72 w-auto xl:w-full opacity-80"
+                  className="relative h-32 xl:h-72 w-auto xl:w-full opacity-80 cursor-pointer"
+                  onClick={() => navigate("/movie-detail")}
                   style={{
                     backgroundImage: `url(${trendingMovie.backgroundImg})`,
                     backgroundSize: "cover",

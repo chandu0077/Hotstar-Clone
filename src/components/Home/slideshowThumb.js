@@ -1,8 +1,12 @@
-const SlideShowThumb = (props) => {
-  const { movies, changeMovieHandler } = props;
+import { useContext } from "react";
+import MovieContext from "../../store/movie-context";
+const SlideShowThumb = () => {
+  // const { movies, changeMovieHandler } = props;
+
+  const slideshowCtx = useContext(MovieContext);
   return (
     <>
-      {movies.map((movie, idx) => {
+      {slideshowCtx.slideshowMovies.map((movie, idx) => {
         return (
           <div
             key={idx}
@@ -12,7 +16,7 @@ const SlideShowThumb = (props) => {
               // height: 100,
               // width: 200,
             }}
-            onClick={() => changeMovieHandler(idx)}
+            onClick={() => slideshowCtx.changeMovieHandler(idx)}
           >
             <div className="absolute bottom-0 left-0 px-3 py-3 w-full cursor-pointer">
               <div className="flex justify-between">
